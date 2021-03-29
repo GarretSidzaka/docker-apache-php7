@@ -23,26 +23,6 @@ RUN apt-get update && \
       php7.4-pgsql \
       libapache2-mod-php7.4 \
       composer
---------
-
-      php7.0 \
-      php7.0-cli \
-      libapache2-mod-php7.0 \
-      php-apcu \
-      php-xdebug \
-      php7.0-gd \
-      php7.0-json \
-      php7.0-ldap \
-      php7.0-mbstring \
-      php7.0-mysql \
-      php7.0-pgsql \
-      php7.0-sqlite3 \
-      php7.0-xml \
-      php7.0-xsl \
-      php7.0-zip \
-      php7.0-soap \
-      php7.0-opcache \
-      composer
 
 COPY apache_default /etc/apache2/sites-available/000-default.conf
 COPY run /usr/local/bin/run
