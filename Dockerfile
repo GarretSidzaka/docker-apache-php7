@@ -1,5 +1,5 @@
-FROM ubuntu:16.04
-MAINTAINER Alexander Schenkel <alex@alexi.ch>
+FROM ubuntu:latest
+MAINTAINER GarretSidzaka <contact@2enp.com>
 
 VOLUME ["/var/www"]
 
@@ -7,6 +7,24 @@ RUN apt-get update && \
     apt-get dist-upgrade -y && \
     apt-get install -y \
       apache2 \
+      php7.4 \
+      php7.4-mysql \
+      php-common \
+      php7.4-cli \
+      php7.4-json \
+      php7.4-common \
+      php7.4-opcache \
+      php7.4-xml \
+      php7.4-xsl \
+      php7.4-zip \
+      php7.4-soap \
+      php7.4-opcache \
+      php7.4-sqlite3 \
+      php7.4-pgsql \
+      libapache2-mod-php7.4 \
+      composer
+--------
+
       php7.0 \
       php7.0-cli \
       libapache2-mod-php7.0 \
