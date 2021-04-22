@@ -37,7 +37,7 @@ With a Crazy amount of options and Let's Encrypt companion variables:
      -e 'LETSENCRYPT_EMAIL=admin@example.com' \
      -e 'LETSENCRYPT_HOST=example.com' \
      -e 'VIRTUAL_HOST=example.com' \
-     garretsidzaka/apache-php7
+     garretsidzaka/docker-apache-php7
 ```
 
 ### Access apache logs
