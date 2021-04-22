@@ -37,7 +37,8 @@ With a Crazy amount of options:
      -e 'LETSENCRYPT_EMAIL=admin@example.com' \
      -e 'LETSENCRYPT_HOST=example.com' \
      -e 'VIRTUAL_HOST=example.com' \
-     garretsidzaka/apache-php7```
+     garretsidzaka/apache-php7
+```
 
 ### Access apache logs
 
