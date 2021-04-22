@@ -1,4 +1,4 @@
-apache-php7
+docker-apache-php7
 ===================================
 
 A Docker image based on Ubuntu, serving PHP 7.4 running as Apache Module. Useful for Web developers in need for a fixed PHP version. In addition, the `error_reporting` setting in php.ini is configurable per container via environment variable.
