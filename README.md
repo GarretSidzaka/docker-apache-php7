@@ -28,6 +28,17 @@ $ docker run -d -p 8080:80 \
 * `-p [local port]:80` maps a local port to the container's HTTP port 80
 * `-e PHP_ERROR_REPORTING=[php error_reporting settings]` sets the value of `error_reporting` in the php.ini files.
 
+With a Crazy amount of options:
+```docker run -d \
+     --name examplecom \
+     --net my_network \
+     --ip 172.18.0.100 \
+     -v ~/htdocs/examplecom:/var/www:rw \
+     -e 'LETSENCRYPT_EMAIL=admin@example.com' \
+     -e 'LETSENCRYPT_HOST=example.com' \
+     -e 'VIRTUAL_HOST=example.com' \
+     garretsidzaka/apache-php7```
+
 ### Access apache logs
 
 Apache is configured to log both access and error log to STDOUT. So you can simply use `docker logs` to get the log output:
