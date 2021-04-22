@@ -28,7 +28,7 @@ $ docker run -d -p 8080:80 \
 * `-p [local port]:80` maps a local port to the container's HTTP port 80
 * `-e PHP_ERROR_REPORTING=[php error_reporting settings]` sets the value of `error_reporting` in the php.ini files.
 
-With a Crazy amount of options:
+With a Crazy amount of options and Let's Encrypt companion variables:
 ```docker run -d \
      --name examplecom \
      --net my_network \
