@@ -17,7 +17,7 @@ RUN export DEBIAN_FRONTEND=noninteractive && \
       php7.4-opcache \
       php7.4-xml \
       php7.4-xsl \
-      php7.2-gd \
+      php7.4-gd \
       php7.4-zip \
       php7.4-soap \
       php7.4-opcache \
