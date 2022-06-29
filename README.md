@@ -8,7 +8,25 @@ Tags
 
 * latest: Ubuntu (LTS), Apache , PHP 7.4 with support for setting `error_reporting`
 
-Usage
+Docker-compose
+------
+
+
+```docker run -d \
+     --name examplecom \
+     --net my_network \
+     --ip 172.18.0.100 \
+     -v ~/htdocs/examplecom:/var/www:rw \
+     -e 'LETSENCRYPT_EMAIL=admin@example.com' \
+     -e 'LETSENCRYPT_HOST=example.com' \
+     -e 'VIRTUAL_HOST=example.com' \
+     garretsidzaka/docker-apache-php7
+```
+
+
+
+
+Raw Docker Usage
 ------
 
 ```
