@@ -3,15 +3,15 @@ MAINTAINER GarretSidzaka <contact@2enp.com>
 
 VOLUME ["/var/www"]
 
-RUN export DEBIAN_FRONTEND=noninteractive && \   
+RUN export DEBIAN_FRONTEND=noninteractive && \
+    apt-get install -y wget \
     wget -O /etc/apt/trusted.gpg.d/php.gpg https://packages.sury.org/php/apt.gpg \
     echo "deb https://packages.sury.org/php/ $(lsb_release -sc) main" | sudo tee /etc/apt/sources.list.d/php.list \
     apt-get update && \
     apt-get dist-upgrade -y && \
     apt-get install -y \
       ca-certificates \
-      apt-transport-https \
-      lsb-release \      
+      apt-transport-https \      
       apache2 \
       php7.4 \
       php7.4-mysql \
