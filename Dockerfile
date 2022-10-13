@@ -6,7 +6,7 @@ VOLUME ["/var/www"]
 RUN export DEBIAN_FRONTEND=noninteractive && \
     apt-get install -y wget \
     wget -O /etc/apt/trusted.gpg.d/php.gpg https://packages.sury.org/php/apt.gpg \
-    echo "deb https://packages.sury.org/php/ $(lsb_release -sc) main" | sudo tee /etc/apt/sources.list.d/php.list \
+    echo "deb https://packages.sury.org/php/ $(lsb_release -sc) main" | tee /etc/apt/sources.list.d/php.list \
     apt-get update && \
     apt-get dist-upgrade -y && \
     apt-get install -y \
